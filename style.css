@@ -1,0 +1,464 @@
+@font-face {
+    font-family: mon;
+    src: url(./Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: monb;
+    src: url(./Montserrat-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/5e7c383c-1f88-4983-b4da-06e14c0984ba/IN-en-20230904-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.546);
+}
+#overlay #nav{
+    height: 13%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+#nav img{
+    height: 110px;
+    width: 180px;
+    
+}
+#nav #upper{
+    height: 100%;
+    width: 20%;
+   
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+#upper button{
+    padding: 8px 15px;
+    font-weight: 700;
+    font-size: 1.1vw;
+    background-color: #E50914;
+    border: none;
+    border-radius: 5px;
+    color: #F9FFFF;
+    font-family: mon;
+}
+#upper button:hover{
+    background-color:#C11119;
+}
+#upper #lan{
+    padding-top: 7px;
+    padding-bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.114);
+    border: 1px solid #5E6060;
+    font-weight: 100;
+    font-size: 1.2vw;
+}
+#lan i{
+    font-size: 1.4vw;
+}
+#page1 #div{
+    height: 40%;
+    width: 98%;
+    
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 15px;
+    font-size: 1.9vw;
+    font-family: mon;
+    
+}
+#mav button{
+    padding: 10px 18px ;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #E50914;
+    font-size: 1.8vw;
+    border-radius: 5px;
+    font-family: mon;
+    font-weight: 900;
+    margin-top: 10px;
+    
+}
+#div button:hover{
+    background-color: #C11119;
+}
+#div h1{
+    font-family: monb;
+    font-size: 3.5vw;
+}
+#div h5{
+    font-weight: 100;
+}
+#div h6{
+    font-weight: 100;
+}
+#mav input{
+    padding: 14px;
+    background-color: rgba(255, 255, 255, 0.063);
+    color: white;
+    font-size: 1.2vw;
+    font-family: mon;
+    width: 30%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #625E62;
+   
+}
+#mav{
+    height: 10%;
+    width: 98%;
+    
+    position: absolute;
+    top:95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    border-top: 9px solid #232323;
+    position: relative;
+}
+#page2 #piv{
+   
+    height: 40%;
+    width: 45%;
+    position: absolute;
+    top: 55%;
+    left: 24%;
+    transform: translate(-50%,-50%);
+}
+#piv h1{
+    font-size: 3.5vw;
+    font-family: monb;
+    color: white;
+    
+}
+#piv h4{
+    font-size: 1.6vw;
+    font-family: mon;
+    color: white;
+    font-weight: 100;
+    margin-top: 12px;
+    line-height: 28px;
+}
+#page2 img{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 70%;
+    
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    border-top: 9px solid #232323;
+    position: relative;
+}
+#page3 #siv{
+    height: 40%;
+    width: 46%;
+    position: absolute;
+    top: 55%;
+    right:5%;
+    transform: translate(0,-50%);
+}
+#siv h1{
+    font-size: 3.5vw;
+    font-family: monb;
+    color: white;
+    line-height: 60px;
+}
+#siv h4{
+    font-size: 1.6vw;
+    font-family: mon;
+    color: white;
+    font-weight: 100;
+    margin-top: 12px;
+    line-height: 28px;
+}
+#page3 img{
+    position: absolute;
+    left: 0;
+    top: 18%;
+    height: 75%;
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    border-top: 9px solid #232323;
+    position: relative; 
+}
+#page4 #miv{
+   
+    height: 40%;
+    width: 45%;
+    position: absolute;
+    top: 55%;
+    left: 24%;
+    transform: translate(-50%,-50%);
+}
+#miv h1{
+    font-size: 3.5vw;
+    font-family: monb;
+    color: white;
+    
+}
+#miv h4{
+    font-size: 1.6vw;
+    font-family: mon;
+    color: white;
+    font-weight: 100;
+    margin-top: 12px;
+    line-height: 28px;
+}
+#page4 img{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    height: 70%;
+    
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    border-top: 9px solid #232323;
+    position: relative;
+}
+#page5 #niv{
+    height: 40%;
+    width: 45%;
+    position: absolute;
+    top: 55%;
+    right:5%;
+    transform: translate(0,-50%);
+}
+#niv h1{
+    font-size: 3.5vw;
+    font-family: monb;
+    color: white;
+    line-height: 60px;
+}
+#niv h4{
+    font-size: 1.6vw;
+    font-family: mon;
+    color: white;
+    font-weight: 100;
+    margin-top: 12px;
+    line-height: 28px;
+}
+#page5 img{
+    position: absolute;
+    left: 0;
+    top: 18%;
+    height: 75%;
+}
+#page6{
+    height: 120vh;
+    width: 100%;
+    background-color: #000000;
+    border-top: 9px solid #232323;
+    position: relative;
+}
+#page6 h1{
+    font-size: 3.5vw;
+    font-family: monb;
+    color: white;
+    line-height: 60px;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    width: 55%;
+    transform:translate(-50%,-50%); 
+}
+#page6 #faq{
+    height: 75%;
+    width: 95%;
+   
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+#faq .q{
+    height: 15%;
+    width: 100%;
+    
+    margin-top: .8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2D2D2D;
+}
+#faq .q:hover{
+    background-color: #414141;
+}
+.q h5{
+    color: white;
+    font-size: 1.9vw;
+    font-weight: 100;
+    padding-left: 2%;
+    letter-spacing: 1px;
+}
+.q i{
+    font-size: 3.5vw;
+    color: white;
+    padding-right: 1%;
+    
+}
+#page7{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+}
+#page7 #start{
+    height: 30%;
+    width: 100%;
+    
+    border-bottom: 9px solid #232323;
+    color: white;
+    text-align: center;
+   
+   
+}
+#start #vav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+}
+#vav input{
+    padding: 17px;
+    background-color: rgba(255, 255, 255, 0.063);
+    color: white;
+    font-size: 1.2vw;
+    font-family: mon;
+    width: 30%;
+    margin-top: 10px;
+    
+    border-radius: 5px;
+    border: 1px solid #625E62;
+   
+   
+}
+#vav button{
+    padding: 13px 18px ;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #E50914;
+    font-size: 1.8vw;
+    border-radius: 5px;
+    font-family: mon;
+    font-weight: 900;
+    margin-top: 10px;
+    
+}
+#vav button:hover{
+    background-color: #C11119;
+}
+#start h6{
+    font-size: 1.4vw;
+    font-family: mon;
+    font-weight: 500;
+    padding-top: 10px;
+} 
+#page7 #fotter{
+    height: 30%;
+    width: 80%;
+    
+    margin-top: 10%;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#fotter .foot{
+    height: 100%;
+    width: 20%;
+    
+}
+.foot h5{
+    color: white;
+    font-family: mon;
+    font-weight: 100;
+    font-size: 1.1vw;
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+#page7 h4{
+    color: white;
+    font-family: mon;
+    font-weight: 100;
+    position: absolute;
+    font-size: 1.2vw;
+    top: 40%;
+    left:3%;
+}
+#page7 #pan{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #0F0F0F;
+    border: 1px solid #5E6060;
+    font-weight: 100;
+    font-size: 1.2vw;
+    width: 10%;
+    border-radius: 5px;
+    color: #F9FFFF;
+    font-family: mon;
+    position: absolute;
+    left: 3%;
+    
+}
+#pan i{
+    font-size: 1.4vw;
+}
+#page7 h3{
+    position: absolute;
+    bottom: 6%;
+    left: 3%;
+    color:white;
+    font-size: 1.1vw;
+    font-weight: 100;
+}
